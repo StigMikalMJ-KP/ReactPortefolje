@@ -18,7 +18,7 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Thank you, ${formData.name}! Your message has been received.`);
-    console.log(formData);
+    console.log(formData); //Printer på consolen
     setFormData({ name: '', email: '', message: '' });
   };
 

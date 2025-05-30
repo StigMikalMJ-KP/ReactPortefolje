@@ -65,7 +65,7 @@ const ProjectContainer = ({ name }) => {
           color: overlayHovered ? 'white' : 'black',
           textShadow: overlayHovered
             ? '2px 2px 4px rgba(0, 0, 0, 0.5)'
-            : '2px 2px 4px rgba(255, 255, 255, 0.5)',
+            : '2px 2px 4px rgba(255, 255, 255, 0.5)', //Bytter farge hvis hover
           transition: 'all 0.3s ease',
         }}
       >{name}</h1>
@@ -99,11 +99,11 @@ export default function Home() {
   }, [location]);
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % projectAmount);
+    setCurrentIndex((prev) => (prev + 1) % projectAmount); //Går til neste prosjekt
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + projectAmount) % projectAmount);
+    setCurrentIndex((prev) => (prev - 1 + projectAmount) % projectAmount); //Går til forrige prosjekt
   };
 
   return (
