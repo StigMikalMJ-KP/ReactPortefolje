@@ -8,7 +8,7 @@ import Timeline from './pages/Timeline'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter base='ReactPortefolje'>
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<Home />}></Route>
